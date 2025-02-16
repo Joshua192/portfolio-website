@@ -1,0 +1,83 @@
+/* To make my page responsive I need to use relative sizing for all my elements (percentages, (min,max)) */
+body {
+  padding: 0px;
+  margin: 0px;
+  // I'm actually gonna lose it if I have to keep writing important to override bootstrap
+  background-color: lightblue !important;
+  font-family: "Segoe UI", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif !important;
+}
+header {
+  position: sticky;
+  top: 0;
+  /* background-color: white; */
+  width: auto;
+  font-size: 45px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+header li {
+  display: inline-block;
+  /* padding: 0px; */
+  /* border-right: solid; How to use this for everything except last element in list. */
+}
+
+.greeting {
+  color: dodgerblue;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.content {
+  background-color: rgb(27, 170, 217);
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  /* padding-left: 5%; */
+  margin: 20px;
+}
+
+@media screen and (min-width: 1060px) {
+  body {
+    font-size: large !important;
+  }
+  .sidenav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0px;
+    width: 5% !important;
+    height: 100%;
+    overflow: auto;
+    background-color: #f1f1f1;
+  }
+  .sidenav-content {
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* margin: 45% 0; */
+  }
+  .body {
+    padding-left: 5%;
+  }
+}
+/* why does using display in classes work but not within tags? */
+@media screen and (max-width: 1060px) {
+  body {
+    font-size: small !important;
+  }
+  .sidenav {
+    background-color: #f1f1f1;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidenav-content {
+    justify-content: space-around;
+  }
+}
