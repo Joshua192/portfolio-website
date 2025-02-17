@@ -39,6 +39,25 @@ header li {
   margin: 20px;
 }
 
+.banner-bg-image {
+  background-image: url(Creator-flower-boy.jpg);
+  background-position: 0% 25%;
+}
+.banner-bg-image:hover {
+  //TODO: Bring text to front and only opac background.
+  opacity: 0.65;
+  font-size: 1.05em;
+  transition-duration: 500ms;
+}
+.footer-text {
+  color: #4bab51; //forest-green #2b662f
+  font-size: 1em;
+  padding: 1em;
+  text-align: left;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
 @media screen and (min-width: 1060px) {
   body {
     font-size: large !important;

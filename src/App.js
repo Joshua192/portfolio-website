@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import ReactDOM from "react-dom/client";
 import profilePic from "./Josh-Selfie.jpg";
+// import background from "./city_background_daytime.jpg";
 
 const myEntireWebPage = (
   <body>
@@ -14,22 +15,24 @@ const myEntireWebPage = (
             target="_blank"
             rel="noreferrer"
           >
-            <svg
-              stroke="currentColor"
-              fill="none"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-="round"
-                stroke-linejoin="round"
-                d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
-              ></path>
-            </svg>
+            <span title="Email">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-="round"
+                  stroke-linejoin="round"
+                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                ></path>
+              </svg>
+            </span>
           </a>
 
           <a
@@ -37,17 +40,19 @@ const myEntireWebPage = (
             target="_blank"
             rel="noreferrer"
           >
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 448 512"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
-            </svg>
+            <span title="LinkedIn">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+              </svg>
+            </span>
           </a>
 
           <a
@@ -55,21 +60,23 @@ const myEntireWebPage = (
             target="_blank"
             rel="noreferrer"
           >
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 16 16"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"
-              ></path>
-            </svg>
+            <span title="GitHub">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"
+                ></path>
+              </svg>
+            </span>
           </a>
         </div>
       </div>
@@ -105,10 +112,10 @@ const myEntireWebPage = (
           />
         </div>
       </div>
-
       <h2 class="text-decoration-underline">
-        {"["}WORK{"] "}What am I Working On?
+        {"["}WORK{"] "}
       </h2>
+      <h2 class="text-decoration-underline">What am I Working On?</h2>
       <div class="content">
         <h3>
           <a
@@ -124,7 +131,6 @@ const myEntireWebPage = (
           night events in London.
         </p>
       </div>
-
       <div class="content">
         <h3 class="text-decoration-underline">This Website!</h3>
         <p>
@@ -133,7 +139,6 @@ const myEntireWebPage = (
           technologies and tricks I happen to learn.
         </p>
       </div>
-
       <div class="content">
         <h3> TypeScript Project</h3>
         <p>
@@ -143,9 +148,7 @@ const myEntireWebPage = (
         </p>
         <p>I am utilising the Spotify API to create a Song Recommender.</p>
       </div>
-
       <h2 class="text-decoration-underline"> What I have worked on</h2>
-
       <div class="content">
         <h3>
           {" "}
@@ -175,7 +178,6 @@ const myEntireWebPage = (
           purposes.
         </p>
       </div>
-
       <div class="content">
         <h3>
           <a
@@ -242,7 +244,6 @@ const myEntireWebPage = (
           database for storing scanned plates.
         </p>
       </div> */}
-
       <h2 class="text-decoration-underline" target="_blank" rel="noreferrer">
         My Educational Background
       </h2>
@@ -273,6 +274,16 @@ const myEntireWebPage = (
           </a>
         </p>
       </div>
+      <footer>
+        <div class="banner-bg-image">
+          <div class="footer-gray-bg">
+            <h5 class="footer-text">
+              Designed on pen and paper and brought to life with Sass and many
+              painful hours in React... :{")"}
+            </h5>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 );
