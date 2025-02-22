@@ -1,11 +1,26 @@
-/* To make my page responsive I need to use relative sizing for all my elements (percentages, (min,max)) */
+:root {
+  --dark: #000000;
+  --light: #ffffff;
+  --background: #ebb177;
+  --primary-colour: #c78054;
+  --accent-colour: #af6639;
+}
 body {
   padding: 0px;
   margin: 0px;
   // I'm actually gonna lose it if I have to keep writing important to override bootstrap
-  background-color: lightblue !important;
-  font-family: "Segoe UI", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+  background-color: var(--background) !important;
+  // color: #4bab51 !important;
+  //TODO: Render Roboto Serif
+  // font-family: "Roboto Serif", Georgia, "Times New Roman", Times, serif !important;
+  font-family:
+    "Roboto Serif" "Segoe UI",
+    "Gill Sans",
+    "Gill Sans MT",
+    //   Calibri,
+    //   "Trebuchet MS",
     sans-serif !important;
+  flex-wrap: wrap;
 }
 header {
   position: sticky;
@@ -20,40 +35,82 @@ header {
 
 header li {
   display: inline-block;
-  /* padding: 0px; */
-  /* border-right: solid; How to use this for everything except last element in list. */
+}
+
+.intro {
+  // border: thick solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0rem 15%;
+}
+.intro-text {
+  // border: thick solid black;
+  width: 150%;
+}
+
+.intro-picture {
+  // border: thick solid black;
+  display: flex;
+  justify-content: center;
 }
 
 .greeting {
-  color: dodgerblue;
+  color: var(--primary-colour);
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
 }
 
+.about {
+  //border: thick solid black;
+}
+.work-exp {
+  //border: thick solid black;
+}
+.skills {
+  //border: thick solid black;
+}
+.projects {
+  //border: thick solid black;
+}
+.education {
+  //border: thick solid black;
+}
+.hobbies {
+  //border: thick solid black;
+}
+
 .content {
-  background-color: rgb(27, 170, 217);
+  // background-color: rgb(169, 255, 169);
+  background-color: var(--primary-colour);
   text-align: center;
   border-radius: 30px;
+  border: 0.15em solid var(--accent-colour);
   padding: 10px;
   /* padding-left: 5%; */
   margin: 20px;
 }
 
 .banner-bg-image {
-  background-image: url(Creator-flower-boy.jpg);
-  background-position: 0% 25%;
+  // background-image: url(Creator-flower-boy.jpg);
+  // background-position: 0% 25%;
+  background-image: url(city_background_night.jpg);
+  background-position: 0% 0%;
 }
 .banner-bg-image:hover {
   //TODO: Bring text to front and only opac background.
+  //TODO: Text adjust breaks sidenav in Firefox
   opacity: 0.65;
   font-size: 1.05em;
   transition-duration: 500ms;
 }
 .footer-text {
-  color: #4bab51; //forest-green #2b662f
+  color: var(--light); //#4bab51; //forest-green #2b662f
   font-size: 1em;
   padding: 1em;
   text-align: left;
+  //TODO: Webkit breaks in Firefox.
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
 }
@@ -80,6 +137,12 @@ header li {
     width: 100%;
     /* margin: 45% 0; */
   }
+
+  .intro-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
   .body {
     padding-left: 5%;
   }
@@ -95,6 +158,12 @@ header li {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .intro {
+    flex-wrap: wrap;
+  }
+  .intro-picture {
+    display: none;
   }
   .sidenav-content {
     justify-content: space-around;
