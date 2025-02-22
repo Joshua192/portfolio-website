@@ -1,17 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import ReactDOM from "react-dom/client";
-import profilePic from "./Josh-Selfie.jpg";
+import profilePic from "./Josh-Selfie.png";
 // import background from "./city_background_daytime.jpg";
 
 const myEntireWebPage = (
   <body>
     <header>
-      {/* <div class="container space-around sidenav "> */}
-      <div class="sidenav mx-0 my-0 px-0 py-0 ">
+      <div class="sidenav">
         <div class="sidenav-content">
           <a
-            href="mailto=joshuaaoyekunle@gmail.com"
+            href="mailto:joshuaaoyekunle@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
@@ -83,160 +82,173 @@ const myEntireWebPage = (
     </header>
 
     <div class="body">
-      <div class="d-flex justify-content-center mx-100 ">
-        <div class="flex:50%">
-          <p class="flex flex-col text-start fs-1 fw-bold greeting">Hello,</p>
-          <p>I&#39;m Josh.</p>
+      <div class="intro">
+        {/* <div class=" intro d-flex justify-content-center "> */}
+        <div class="intro-text">
+          {/* <p class="flex-col flex-end text-start fs-1 fw-bold"> */}
+          <p>Hello, I am</p>
+          <p class="greeting fs-1 fw-bold">Josh Oyekunle</p>
           <p>
-            A Computer Science grad and part-time programmer who likes to solve
-            interesting problems.
+            &#34; A programmer who likes to solve interesting problems. &#34;
           </p>
-          {/* <ul> */}{" "}
-          {/*TODO: Add animated feature that iterates through each item  in this list */}
-          <p>I&#39;m into:</p>
-          {"["}Rock Climbing
+          {/* TODO: Add animated feature that iterates through each item  in this list */}
           {/* TODO: Have this come up on hover (Solving Rubik&#39;s cubes quickly) */}
-          , Speed-Cubing, Chess, Electric Guitar, Statistics and Machine
-          Learning, Platforming Video Games
-          {/* (Celeste, Cuphead, Hollow Knight) */}
-          {"]"}
-          {/* </ul> */}
+          {/* <p>I&#39;m into:</p>
+          <div class="stepped-typewriter">
+            {"["}Rock Climbing ,{" "}
+            <span title="Solving Rubik's Cube Puzzles Quickly">
+              Speed-Cubing
+            </span>
+            , Chess, Electric Guitar, Statistics and Machine Learning,
+            Platforming Video Games (Celeste, Cuphead, Hollow Knight)
+            {"]"}
+          </div> */}
         </div>
-        <div class="flex:50% ">
-          <img
-            src={profilePic}
-            alt="profile"
-            width="270px"
-            height="300px"
-            class="px-auto mx-auto border border-dark"
-          />
+        <div class="intro-picture">
+          <img src={profilePic} alt="profile" width="50%" height="auto" />
         </div>
       </div>
-      <h2 class="text-decoration-underline">
-        {"["}WORK{"] "}
-      </h2>
-      <h2 class="text-decoration-underline">What am I Working On?</h2>
-      <div class="content">
-        <h3>
-          <a
-            href="https://www.kunlesgamesnight.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Kunle&#39;s Games Nights
-          </a>
-        </h3>
-        <p>
-          Working as a back end engineer for KGN, a ticket sales platform for
-          night events in London.
+      <div class="about">
+        <h2 class="text-decoration-underline">About</h2>
+        <p class="content accordion-body">
+          I'm a Computer Science graduate with a love for Maths, Music and
+          Reading. I'm looking for a software engineering or data science role,
+          but I'm open to other roles based on fit and interest. I currently
+          work as a back end developer for a ticket selling website and I build
+          personal websites for clients in my spare time.
         </p>
       </div>
-      <div class="content">
-        <h3 class="text-decoration-underline">This Website!</h3>
-        <p>
-          I work on improving its' appearance in my free time with React and
-          Sass. I additionally use this site to experiment with any new web
-          technologies and tricks I happen to learn.
-        </p>
-      </div>
-      <div class="content">
-        <h3> TypeScript Project</h3>
-        <p>
-          I&#39;m working on a project with a back-end written in TypeScript
-          because I had several debugging issues with my last project due to
-          type safety.
-        </p>
-        <p>I am utilising the Spotify API to create a Song Recommender.</p>
-      </div>
-      <h2 class="text-decoration-underline"> What I have worked on</h2>
-      <div class="content">
-        <h3>
-          {" "}
-          <a
-            href="https://github.com/Joshua192/age-gender-predictor"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Facial Recognition with Age and Gender Prediction
-          </a>
-        </h3>
-        <p>
-          This was a project I proposed for my Computer Science dissertation.
-        </p>
-        <p>
-          It was primarily a Machine Learning and Transfer Learning project. I
-          attached a trained model with to a WebApp written in JavaScript to
-          handle Web RTC and file communication between my model and the
-          user&#39;s computer. Back-end written with Flask.
-        </p>
-        <p>
-          Trained a TensorFlow Convolutional Neural Network to recognise age
-          demographics and classify gender in human faces.
-        </p>
-        <p>
-          Gathered data from some of my friends and augmented it for training
-          purposes.
-        </p>
-      </div>
-      <div class="content">
-        <h3>
-          <a
-            href="https://github.com/Joshua192/readmit-predict"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Prediction of Diabetic Patient Re-admission
-          </a>
-        </h3>
-        <ul>
-          <li>
+
+      <div class="d-flex justify-content-center">
+        <div class="work-exp flex">
+          <h2 class="text-decoration-underline">Work Experience</h2>
+          <div class="content">
+            <h3>
+              <a
+                href="https://www.kunlesgamesnight.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Kunle&#39;s Games Nights
+              </a>
+            </h3>
             <p>
-              Collaborated with a team of five (5) to analyse patient data and
-              predict likelihood of re-admission among diabetics.
+              Working as a back end engineer for KGN, a ticket sales platform
+              for night events in London.
             </p>
-          </li>
-          <li>
+          </div>
+          <div class="content">
+            <h3 class="text-decoration-underline">This Website!</h3>
             <p>
-              Led cleaning and analysis of over 100,000 rows of data for model
-              development and evaluation.
+              I work on improving its' appearance in my free time with{" "}
+              <a href="https://react.dev/" target="_blank" rel="noreferrer">
+                React
+              </a>{" "}
+              and{" "}
+              <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
+                Sass
+              </a>
+              . I additionally use this site to experiment with any new web
+              technologies and tricks I happen to learn.
             </p>
-          </li>
-          <li>
+          </div>
+          {/* <div class="content">
+            <h3> TypeScript Project</h3>
             <p>
-              Built and evaluated several classification models, achieving 64%
-              accuracy using logistic regression, random forest, and XGBoost.
+              I&#39;m working on a project with a back-end written in TypeScript
+              because I had several debugging issues with my last project due to
+              type safety.
             </p>
-          </li>
-          <li>
-            <p>
-              Delivered a comprehensive report on development and analysis of
-              data to assert conclusions on correlated and causal factors in
-              patient re-admission.
-            </p>
-          </li>
-        </ul>
+            <p>I am utilising the Spotify API to create a Song Recommender.</p>
+          </div> */}
+        </div>
+        {/* <div class="skills ">
+          <h2 class="text-decoration-underline">Skills</h2>
+          <div class="skilled-col d-flex flex-row flex-wrap">
+            <p>Python</p>
+            <p>JavaScript</p>
+          </div>
+          <div class="intermediate-col flex-row">
+            <p>TypeScript</p> <p>Node.js</p> <p>Next.js</p> <p>React</p>
+            <p>C++</p>
+            <p>TensorFlow</p> <p>Pandas</p> <p>Git</p> <p>Vercel</p>
+          </div>
+          <div class="beginner-col flex-row">
+            <p>MySQL</p> <p>OpenCV</p> <p>NumPy</p>
+          </div>
+        </div> */}
       </div>
-      <div class="d-none">
-        {/* UNHIDE ELEMENT AND DELETE WHEN DONE */}
-        <h2 class="text-decoration-underline">
-          {"["}SKILLS{"]"}
-        </h2>
-        <ul class="flex">
-          <li>Python</li>
-          <li>TypeScript</li>
-          <li>
-            JavaScript {"("}Node.js, Next.js, React{")"}
-          </li>
-          <li>C++</li>
-          <li>TensorFlow</li>
-          <li>Pandas</li>
-          <li>Git</li>
-          <li>Vercel</li>
-          <li>MySQL</li>
-          <li>OpenCV</li>
-          <li>NumPy</li>
-        </ul>
+      <div class="projects">
+        <h2 class="text-decoration-underline"> What I have worked on</h2>
+        <div class="content">
+          <h3>
+            {" "}
+            <a
+              href="https://github.com/Joshua192/age-gender-predictor"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Facial Recognition with Age and Gender Prediction
+            </a>
+          </h3>
+          <p>
+            This was a project I proposed for my Computer Science dissertation.
+          </p>
+          <p>
+            It was primarily a Machine Learning and Transfer Learning project. I
+            attached a trained model with to a WebApp written in JavaScript to
+            handle Web RTC and file communication between my model and the
+            user&#39;s computer. Back-end written with Flask.
+          </p>
+          <p>
+            Trained a TensorFlow Convolutional Neural Network to recognise age
+            demographics and classify gender in human faces.
+          </p>
+          <p>
+            Gathered data from some of my friends and augmented it for training
+            purposes.
+          </p>
+        </div>
+        <div class="content">
+          <h3>
+            <a
+              href="https://github.com/Joshua192/readmit-predict"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Prediction of Diabetic Patient Re-admission
+            </a>
+          </h3>
+          <ul>
+            <li>
+              <p>
+                Collaborated with a team of five (5) to analyse patient data and
+                predict likelihood of re-admission among diabetics.
+              </p>
+            </li>
+            <li>
+              <p>
+                Led cleaning and analysis of over 100,000 rows of data for model
+                development and evaluation.
+              </p>
+            </li>
+            <li>
+              <p>
+                Built and evaluated several classification models, achieving 64%
+                accuracy using logistic regression, random forest, and XGBoost.
+              </p>
+            </li>
+            <li>
+              <p>
+                Delivered a comprehensive report on development and analysis of
+                data to assert conclusions on correlated and causal factors in
+                patient re-admission.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
+
       {/* <div class="content">
         <h3>Automatic Number Plate Recognition</h3>
         <p>
@@ -244,42 +256,44 @@ const myEntireWebPage = (
           database for storing scanned plates.
         </p>
       </div> */}
-      <h2 class="text-decoration-underline" target="_blank" rel="noreferrer">
-        My Educational Background
-      </h2>
-      <div class="content">
-        <i>
-          {" "}
-          Computer Science Bachelors, Upper Second Class (with 1st class
-          dissertation){" "}
-        </i>
-        <p>
-          Work Experience via Internships in front-end, database management and
-          data analysis. Various side-projects and mini-games found on my{" "}
-          <a
-            href="https://github.com/Joshua192"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </a>
-          . CV available{" "}
-          <a
-            href="mailto=joshuaaoyekunle@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
+      <div class="education">
+        <h2 class="text-decoration-underline" target="_blank" rel="noreferrer">
+          My Educational Background
+        </h2>
+        <div class="content">
+          <i>
             {" "}
-            upon request
-          </a>
-        </p>
+            Computer Science Bachelors, Upper Second Class (with 1st class
+            dissertation){" "}
+          </i>
+          <p>
+            Work Experience via Internships in front-end, database management
+            and data analysis. Various side-projects and mini-games found on my{" "}
+            <a
+              href="https://github.com/Joshua192"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+            . CV available{" "}
+            <a
+              href="mailto:joshuaaoyekunle@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              upon request
+            </a>
+          </p>
+        </div>
       </div>
       <footer>
         <div class="banner-bg-image">
           <div class="footer-gray-bg">
             <h5 class="footer-text">
-              Designed on pen and paper and brought to life with Sass and many
-              painful hours in React... :{")"}
+              Designed on pen and paper and brought to life with Sass, Bootstrap
+              and many painful hours in Figma... :{")"}
             </h5>
           </div>
         </div>
