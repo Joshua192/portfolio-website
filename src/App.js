@@ -103,6 +103,17 @@ const myEntireWebPage = (
             Platforming Video Games (Celeste, Cuphead, Hollow Knight)
             {"]"}
           </div> */}
+          <div class="nav-buttons">
+            <button class="navigation-button">
+              <a href="#About"> About </a>
+            </button>
+            <button class="navigation-button">
+              <a href="#Work"> Work </a>
+            </button>
+            <button class="navigation-button">
+              <a href="#Education"> Education</a>
+            </button>
+          </div>
         </div>
         <div class="intro-picture">
           <img src={profilePic} alt="profile" width="50%" height="auto" />
@@ -121,6 +132,7 @@ const myEntireWebPage = (
 
       <div class="d-flex justify-content-center">
         <div class="work-exp flex">
+          <a name="Work" />
           <h2 class="text-decoration-underline">Work Experience</h2>
           <div class="content">
             <h3>
@@ -257,6 +269,7 @@ const myEntireWebPage = (
         </p>
       </div> */}
       <div class="education">
+        <a name="Education" />
         <h2 class="text-decoration-underline" target="_blank" rel="noreferrer">
           My Educational Background
         </h2>

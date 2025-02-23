@@ -62,6 +62,26 @@ header li {
   -webkit-text-stroke-color: black;
 }
 
+.nav-buttons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-button {
+  //buttons in the style of content class
+  background-color: var(--primary-colour);
+  text-align: center;
+  border: 0.15em solid var(--accent-colour);
+  border-radius: 15px;
+}
+
+.navigation-button a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--dark);
+}
+
 .about {
   //border: thick solid black;
 }
@@ -89,7 +109,7 @@ header li {
   border: 0.15em solid var(--accent-colour);
   padding: 10px;
   /* padding-left: 5%; */
-  margin: 20px;
+  margin: 1rem;
 }
 
 .banner-bg-image {
