@@ -111,12 +111,21 @@ const myEntireWebPage = (
               <a href="#Work"> Work </a>
             </button>
             <button class="navigation-button">
+              <a href="#Projects"> Projects</a>
+            </button>
+            <button class="navigation-button">
               <a href="#Education"> Education</a>
             </button>
           </div>
         </div>
         <div class="intro-picture">
-          <img src={profilePic} alt="profile" width="50%" height="auto" />
+          <img
+            src={profilePic}
+            fetchPriority="high"
+            alt="profile"
+            width="50%"
+            height="auto"
+          />
         </div>
       </div>
       <div class="about">
@@ -191,7 +200,8 @@ const myEntireWebPage = (
         </div> */}
       </div>
       <div class="projects">
-        <h2 class="text-decoration-underline"> What I have worked on</h2>
+        <a name="Projects" />
+        <h2 class="text-decoration-underline"> Projects</h2>
         <div class="content">
           <h3>
             {" "}
