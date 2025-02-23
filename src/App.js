@@ -139,7 +139,9 @@ const myEntireWebPage = (
         </p>
       </div>
 
-      <div class="d-flex justify-content-center">
+      <div>
+        {/* <div class="d-flex justify-content-center">
+         */}
         <div class="work-exp flex">
           <a name="Work" />
           <h2 class="text-decoration-underline">Work Experience</h2>
@@ -159,20 +161,19 @@ const myEntireWebPage = (
             </p>
           </div>
           <div class="content">
-            <h3 class="text-decoration-underline">This Website!</h3>
-            <p>
-              I work on improving its' appearance in my free time with{" "}
-              <a href="https://react.dev/" target="_blank" rel="noreferrer">
-                React
-              </a>{" "}
-              and{" "}
-              <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
-                Sass
+            <h3>
+              <a href="https://en.wikipedia.org/wiki/Heritage_Bank_(Nigeria)">
+                Heritage Bank Nigeria
               </a>
-              . I additionally use this site to experiment with any new web
-              technologies and tricks I happen to learn.
+            </h3>
+            <p>
+              {" "}
+              Worked as an intern at Heritage in their front-end development
+              team. Aided in the redesign their website home page with Figma and
+              Tailwind CSS.
             </p>
           </div>
+
           {/* <div class="content">
             <h3> TypeScript Project</h3>
             <p>
@@ -203,6 +204,50 @@ const myEntireWebPage = (
         <a name="Projects" />
         <h2 class="text-decoration-underline"> Projects</h2>
         <div class="content">
+          <h3 class="text-decoration-underline">
+            <a href="https://portfolio-page-inky-mu.vercel.app/">
+              This Website!
+            </a>
+          </h3>
+          <p>
+            I work on improving it's appearance in my free time with{" "}
+            <a href="https://react.dev/" target="_blank" rel="noreferrer">
+              React
+            </a>{" "}
+            and{" "}
+            <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
+              Sass
+            </a>
+            . I additionally use this site to experiment with any new web
+            technologies and tricks I happen to learn.
+          </p>
+        </div>
+        <div class="content">
+          <h3>
+            {" "}
+            <a
+              href="https://triage-tango-assistant.lovable.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Assistive Triage Chatbot [Hackathon]{" "}
+            </a>
+          </h3>
+          <p>
+            Product created for the 'Goldborne Medical Centre' AI Hackathon.
+            This is AI chatbot responsible for screening patients at a GP
+            Centre. Developed with Lovable.dev to reduce wait times in GP
+            Offices.{" "}
+            <a
+              href="https://github.com/Joshua192/triage-tango-assistant"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Code Repository Here
+            </a>
+          </p>
+        </div>
+        <div class="content">
           <h3>
             {" "}
             <a
@@ -217,18 +262,8 @@ const myEntireWebPage = (
             This was a project I proposed for my Computer Science dissertation.
           </p>
           <p>
-            It was primarily a Machine Learning and Transfer Learning project. I
-            attached a trained model with to a WebApp written in JavaScript to
-            handle Web RTC and file communication between my model and the
-            user&#39;s computer. Back-end written with Flask.
-          </p>
-          <p>
-            Trained a TensorFlow Convolutional Neural Network to recognise age
-            demographics and classify gender in human faces.
-          </p>
-          <p>
-            Gathered data from some of my friends and augmented it for training
-            purposes.
+            It is a Machine Learning project where I trained a CNN model and
+            connected it wiht a WebApp to predict user's age and gender.
           </p>
         </div>
         <div class="content">
@@ -241,33 +276,16 @@ const myEntireWebPage = (
               Prediction of Diabetic Patient Re-admission
             </a>
           </h3>
-          <ul>
-            <li>
-              <p>
-                Collaborated with a team of five (5) to analyse patient data and
-                predict likelihood of re-admission among diabetics.
-              </p>
-            </li>
-            <li>
-              <p>
-                Led cleaning and analysis of over 100,000 rows of data for model
-                development and evaluation.
-              </p>
-            </li>
-            <li>
-              <p>
-                Built and evaluated several classification models, achieving 64%
-                accuracy using logistic regression, random forest, and XGBoost.
-              </p>
-            </li>
-            <li>
-              <p>
-                Delivered a comprehensive report on development and analysis of
-                data to assert conclusions on correlated and causal factors in
-                patient re-admission.
-              </p>
-            </li>
-          </ul>
+          <p>
+            I collaborated with a team of five (5) to analyse publicly available
+            patient data and predict the likelihood of a re-admission among
+            diabetics.
+          </p>
+          <p>
+            Delivered a comprehensive report on development and analysis of data
+            to assert conclusions on correlated and causal factors in patient
+            re-admission.
+          </p>
         </div>
       </div>
 
